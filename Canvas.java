@@ -3,7 +3,7 @@ public class Canvas {
     // StdDraw Setup
 		StdDraw.setCanvasSize(canvasX, canvasY);
 		StdDraw.setXscale(0.0, canvasX);
-    StdDraw.setYscale(canvasY, 0.0);	
+    StdDraw.setYscale(0.0, canvasY);	
 		StdDraw.enableDoubleBuffering();
   }
 }

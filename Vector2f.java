@@ -39,6 +39,15 @@ public class Vector2f {
   /// @}
   //////////////////////////////////////////////////////////////////////////////
 
+  public void multiply(float num) {
+    pos[0] *= num;
+    pos[1] *= num;
+  }
+  public void add(Vector2f num) {
+    pos[0] += num.getX();
+    pos[1] += num.getY();
+  }
+
   //////////////////////////////////////////////////////////////////////////////
   /// {@
   // Getters

@@ -2,14 +2,23 @@ public class Object {
   public Object () {}
   public Object (Vector2f _pos) {pos = _pos;}
 
+
+  public void update() {
+    pos.add(vel);
+  }
+
   //////////////////////////////////////////////////////////////////////////////
   /// {@
   /// Getters
   public Vector2f getPos() {return pos;}
   public Vector2f getVel() {return vel;}
   public float getMass() {return mass;}
+  public Vector2f getGravity() {return gravity;}
   /// @}
   //////////////////////////////////////////////////////////////////////////////
+
+  public void addVel(Vector2f newVal){vel.set(vel.getX() + newVal.getX(), vel.getY() + newVal.getY());}
+
   //////////////////////////////////////////////////////////////////////////////
   /// {@
   /// Setters
