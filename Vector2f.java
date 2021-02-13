@@ -36,17 +36,50 @@ public class Vector2f {
     pos[0] = x;
     pos[1] = y;
   }
+  public void set(Vector2f num) {
+    pos[0] = num.getX();
+    pos[1] = num.getY();
+  }
   /// @}
   //////////////////////////////////////////////////////////////////////////////
 
+  //////////////////////////////////////////////////////////////////////////////
+  /// {@
+  /// Arithmetic functions
   public void multiply(float num) {
     pos[0] *= num;
     pos[1] *= num;
+  }
+  public void multiply(Vector2f num) {
+    pos[0] *= num.getX();
+    pos[1] *= num.getY();
+  }
+  public void divide(float num) {
+    pos[0] /= num;
+    pos[1] /= num;
+  }
+  public void divide(Vector2f num) {
+    pos[0] /= num.getX();
+    pos[1] /= num.getY();
+  }
+  public void add(float num) {
+    pos[0] += num;
+    pos[1] += num;
   }
   public void add(Vector2f num) {
     pos[0] += num.getX();
     pos[1] += num.getY();
   }
+  public void subtract(float num) {
+    pos[0] -= num;
+    pos[1] -= num;
+  }
+  public void subtract(Vector2f num) {
+    pos[0] -= num.getX();
+    pos[1] -= num.getY();
+  }
+  /// @}
+  //////////////////////////////////////////////////////////////////////////////
 
   //////////////////////////////////////////////////////////////////////////////
   /// {@
